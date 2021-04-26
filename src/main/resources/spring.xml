@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="add" class="com.spring.Spring.core.Adress">
+<property name="city" value="Hyderabad"></property>
+<property name="state" value="Telangana"></property>
+</bean>
+
+<bean id="emp" class="com.spring.Spring.core.Employee">
+<property name="id" value="201"></property>
+<property name="name" value="ReactJS"></property>
+<property name="adress" ref="add"></property>
+</bean>
+</beans>
